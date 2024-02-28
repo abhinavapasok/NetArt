@@ -10,28 +10,33 @@ import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 
 function Home() {
   return (
-    <div className="min-h-screen w-full p-2 bg-gradient-to-b from-slate-50 to-amber-300">
+    <div className="min-h-screen w-full p-4 bg-gradient-to-b from-slate-50 to-amber-300">
       <header className="flex justify-center">
         <img src={logo} width={400} />
       </header>
 
-      <section className="flex justify-between">
+      <section className="flex flex-col items-center sm:flex sm:flex-row sm:justify-center">
         {/* left section */}
-        <div className="left">
-          {/* left image */}
-          <img src={img1} alt="tropy" width={700} />
+        {/* left image */}
+        <div className="w-1/2">
+          {/* <img src={img1} alt="tropy" width={800} className="object-scale-down" /> */}
+          <img
+            class="h-[300px] max-w-full sm:h-auto"
+            src={img1}
+            alt="image description"
+          />
         </div>
 
         {/* right section */}
         <div className="right flex flex-col items-center">
           {/* right heading */}
-          <h1 className="text-md align-left py-3 font-bold">
+          <h1 className="sm:text-md sm:align-left sm:py-3 sm:font-bold text-center text-md font-bold">
             C.R.I. PUMPS WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018 for
             the 4th time.
           </h1>
           {/* right list */}
           <ui>
-            <li className="text-sm text-left">
+            <li className="sm:text-sm sm:text-left p-2 text:sm">
               C.R.I.'s energy efficient products are well recognized by various
               Government Institutions, as trustworthy products for various
               projects across the globe to save energy.
@@ -44,7 +49,7 @@ function Home() {
             </li>
           </ui>
           {/* right image   */}
-          <img src={img2} alt="tropy-handling" width={1000} className="py-2"/>
+          <img src={img2} alt="tropy-handling" width={1000} className="py-2" />
           <p className="text-sm text-left">
             Government of India has awarded the{" "}
             <b>"National Energy Conservation Award 2018"</b>. Mr. G. Selvaraj,
@@ -73,29 +78,38 @@ function Home() {
       </div>
 
       <section className="flex flex-col items-center py-1">
-        <h1 className="font-bold my-2">C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h1>
+        <h1 className="font-bold my-2">
+          C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS
+        </h1>
         <p className="text-center my-2 text-sm">
-          CHEMICALS <span className="text-red-600">|</span> PROCESS POWER WATER <span className="text-red-600">|</span> WASTE WATER OILS <span className="text-red-600">|</span> GAS PHARMA SUGARS
-          <span className="text-red-600">|</span> DISTILLERIES PAPER <span className="text-red-600">|</span> PULP MARINE <span className="text-red-600">|</span> DEFENCE METAL <span className="text-red-600">|</span> MINING FOOD <span className="text-red-600">|</span>
-          BEVERAGE PETROCHEMICAL <span className="text-red-600">|</span> REFINERIES SOLAR BUILDING HVAC FIRE FIGHTING
-          AGRICULTURE <span className="text-red-600">|</span> RESIDENTIAL
+          CHEMICALS <span className="text-red-600">|</span> PROCESS POWER WATER{" "}
+          <span className="text-red-600">|</span> WASTE WATER OILS{" "}
+          <span className="text-red-600">|</span> GAS PHARMA SUGARS
+          <span className="text-red-600">|</span> DISTILLERIES PAPER{" "}
+          <span className="text-red-600">|</span> PULP MARINE{" "}
+          <span className="text-red-600">|</span> DEFENCE METAL{" "}
+          <span className="text-red-600">|</span> MINING FOOD{" "}
+          <span className="text-red-600">|</span>
+          BEVERAGE PETROCHEMICAL <span className="text-red-600">|</span>{" "}
+          REFINERIES SOLAR BUILDING HVAC FIRE FIGHTING AGRICULTURE{" "}
+          <span className="text-red-600">|</span> RESIDENTIAL
         </p>
       </section>
       {/* footer section */}
-      <footer className="bg-red-600 h-[100px] flex justify-around items-center">
-        <div className="flex justify-between">
+      <footer className="sm:bg-red-600 sm:h-[100px] sm:flex sm:flex-row sm:justify-around sm:items-center bg-red-600 h-[300px] flex-col justify-center items-center">
+        <div className="flex flex-col sm:flex-row ">
           <LocalPhoneRoundedIcon />
-          <p>
+          <p className="">
             Toll free <b>1800 200 1234</b>
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row ">
           <FacebookIcon />
           <a href="https://www.facebook.com/cripumps">
             https://www.facebook.com/cripump
           </a>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row ">
           <LanguageRoundedIcon />
           <a href="https://www.crigroups.com">https://www.crigroups.com</a>
         </div>
