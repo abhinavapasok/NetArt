@@ -10,7 +10,7 @@ import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 
 function Home() {
   return (
-    <div className="min-h-screen w-full p-4 bg-gradient-to-b from-slate-50 to-amber-300">
+    <div className="min-h-screen w-full p-4 bg-gradient-to-b from-slate-50 to-amber-200">
       <header className="flex justify-center">
         <img src={logo} width={400} />
       </header>
@@ -63,7 +63,7 @@ function Home() {
       {/* Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors */}
 
       <div className="section p-2 flex flex-col items-center">
-        <p className="text-md text-center py-6">
+        <p className="text-md text-center py-5">
           INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY
           RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF
           POWER FOR THE NATION.
@@ -73,7 +73,7 @@ function Home() {
           alt="Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors"
           width={1000}
         />
-        <p>
+        <p className="text-center p-3">
           Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
           Solar Systems - Motors{" "}
         </p>
@@ -100,30 +100,25 @@ function Home() {
           <span className="text-red-600">|</span> RESIDENTIAL
         </p>
       </section>
-      
+
       {/* footer section */}
       <footer className="bg-red-600 h-[80px] flex flex-row justify-around items-center ">
-        <div className="flex flex-row ">
+        <a href="tel:+4733378901" className="flex flex-row ">
           <LocalPhoneRoundedIcon />
-          <p className="sm:block hidden">
+          <div className="sm:block hidden">
             Toll free <b>1800 200 1234</b>
-          </p>
-        </div>
-        <div className="flex flex-row">
+          </div>
+        </a>
+        <a className="flex flex-row" href="https://www.facebook.com/cripumps">
           <FacebookIcon />
-          <a
-            className="sm:block hidden"
-            href="https://www.facebook.com/cripumps"
-          >
+          <div className="sm:block hidden">
             https://www.facebook.com/cripump
-          </a>
-        </div>
-        <div className="flex flex-row">
+          </div>
+        </a>
+        <a className="flex flex-row" href="https://www.crigroups.com">
           <LanguageRoundedIcon />
-          <a className="sm:block hidden" href="https://www.crigroups.com">
-            https://www.crigroups.com
-          </a>
-        </div>
+          <div className="sm:block hidden">https://www.crigroups.com</div>
+        </a>
       </footer>
     </div>
   );
