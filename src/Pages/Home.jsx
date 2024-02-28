@@ -15,10 +15,10 @@ function Home() {
         <img src={logo} width={400} />
       </header>
 
-      <section className="flex flex-col items-center sm:flex sm:flex-row sm:justify-center">
+      <section className="sm:flex sm:flex-row sm:justify-center flex flex-col items-center justify-center">
         {/* left section */}
         {/* left image */}
-        <div className="w-1/2">
+        <div className="sm:max-w-[700px] w-auto">
           {/* <img src={img1} alt="tropy" width={800} className="object-scale-down" /> */}
           <img
             class="h-[300px] max-w-full sm:h-auto"
