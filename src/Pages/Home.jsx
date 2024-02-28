@@ -11,9 +11,8 @@ function Home() {
   return (
     <div className="min-h-screen w-full p-2">
       <header className="flex justify-center">
-        <img src={logo} width={300} />
+        <img src={logo} width={400} />
       </header>
-
 
       <section className="flex justify-between">
         {/* left section */}
@@ -24,7 +23,6 @@ function Home() {
 
         {/* right section */}
         <div className="right flex flex-col items-center">
-
           {/* right heading */}
           <h1 className="text-md align-left py-3 font-bold">
             C.R.I. PUMPS WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018 for
@@ -55,7 +53,7 @@ function Home() {
           </p>
         </div>
       </section>
-      <div className="section p-2">
+      <div className="section p-2 flex flex-col items-center">
         <p className="text-sm text-center">
           INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY
           RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF
@@ -64,10 +62,25 @@ function Home() {
         <img
           src={img3}
           alt="Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors"
+          width={1000}
         />
-        <p>Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors </p>
+        <p>
+          Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
+          Solar Systems - Motors{" "}
+        </p>
         <div className="w-full bg-red-600 my-3 h-[2px]"></div>
       </div>
+
+      <section className="flex flex-col items-center">
+        <h1>C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h1>
+        <p className="text-center my-2">
+          CHEMICALS <span className="text-red-600">|</span> PROCESS POWER WATER <span className="text-red-600">|</span> WASTE WATER OILS <span className="text-red-600">|</span> GAS PHARMA SUGARS
+          <span className="text-red-600">|</span> DISTILLERIES PAPER <span className="text-red-600">|</span> PULP MARINE <span className="text-red-600">|</span> DEFENCE METAL <span className="text-red-600">|</span> MINING FOOD <span className="text-red-600">|</span>
+          BEVERAGE PETROCHEMICAL <span className="text-red-600">|</span> REFINERIES SOLAR BUILDING HVAC FIRE FIGHTING
+          AGRICULTURE <span className="text-red-600">|</span> RESIDENTIAL
+        </p>
+      </section>
+      {/* footer section */}
       <footer className="bg-red-600 h-[100px] flex justify-around items-center">
         <div className="flex justify-between">
           <LocalPhoneRoundedIcon />
@@ -77,7 +90,9 @@ function Home() {
         </div>
         <div className="flex justify-between">
           <FacebookIcon />
-          <a href="https://www.facebook.com/cripumps">https://www.facebook.com/cripump</a>
+          <a href="https://www.facebook.com/cripumps">
+            https://www.facebook.com/cripump
+          </a>
         </div>
         <div className="flex justify-between">
           <LanguageRoundedIcon />
