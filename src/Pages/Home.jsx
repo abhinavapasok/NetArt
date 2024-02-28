@@ -7,9 +7,10 @@ import img3 from "../assets/3.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
+
 function Home() {
   return (
-    <div className="min-h-screen w-full p-2">
+    <div className="min-h-screen w-full p-2 bg-gradient-to-b from-slate-50 to-amber-300">
       <header className="flex justify-center">
         <img src={logo} width={400} />
       </header>
@@ -43,7 +44,7 @@ function Home() {
             </li>
           </ui>
           {/* right image   */}
-          <img src={img2} alt="tropy-handling" width={1000} />
+          <img src={img2} alt="tropy-handling" width={1000} className="py-2"/>
           <p className="text-sm text-left">
             Government of India has awarded the{" "}
             <b>"National Energy Conservation Award 2018"</b>. Mr. G. Selvaraj,
@@ -54,7 +55,7 @@ function Home() {
         </div>
       </section>
       <div className="section p-2 flex flex-col items-center">
-        <p className="text-sm text-center">
+        <p className="text-md text-center py-6">
           INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY
           RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF
           POWER FOR THE NATION.
@@ -71,9 +72,9 @@ function Home() {
         <div className="w-full bg-red-600 my-3 h-[2px]"></div>
       </div>
 
-      <section className="flex flex-col items-center">
-        <h1>C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h1>
-        <p className="text-center my-2">
+      <section className="flex flex-col items-center py-1">
+        <h1 className="font-bold my-2">C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h1>
+        <p className="text-center my-2 text-sm">
           CHEMICALS <span className="text-red-600">|</span> PROCESS POWER WATER <span className="text-red-600">|</span> WASTE WATER OILS <span className="text-red-600">|</span> GAS PHARMA SUGARS
           <span className="text-red-600">|</span> DISTILLERIES PAPER <span className="text-red-600">|</span> PULP MARINE <span className="text-red-600">|</span> DEFENCE METAL <span className="text-red-600">|</span> MINING FOOD <span className="text-red-600">|</span>
           BEVERAGE PETROCHEMICAL <span className="text-red-600">|</span> REFINERIES SOLAR BUILDING HVAC FIRE FIGHTING
