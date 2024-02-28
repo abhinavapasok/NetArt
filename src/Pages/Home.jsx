@@ -41,7 +41,7 @@ function Home() {
               Government Institutions, as trustworthy products for various
               projects across the globe to save energy.
             </li>
-            <li className="text-sm text-left">
+            <li className="sm:text-sm sm:text-left p-2 text:sm">
               C.R.I. is the highest contributor in the country for the projects
               of EESL (Energy Efficiency Services Limited) to replace the old
               inefficient pumps with 5 Star rated energy efficient smart pumps
@@ -50,7 +50,7 @@ function Home() {
           </ui>
           {/* right image   */}
           <img src={img2} alt="tropy-handling" width={1000} className="py-2" />
-          <p className="text-sm text-left">
+          <p className="sm:text-sm sm:text-left p-2 text:sm">
             Government of India has awarded the{" "}
             <b>"National Energy Conservation Award 2018"</b>. Mr. G. Selvaraj,
             Joint Managing Director of C.R.I. Group received the award from Smt.
@@ -59,6 +59,9 @@ function Home() {
           </p>
         </div>
       </section>
+
+      {/* Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors */}
+
       <div className="section p-2 flex flex-col items-center">
         <p className="text-md text-center py-6">
           INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY
@@ -76,6 +79,8 @@ function Home() {
         </p>
         <div className="w-full bg-red-600 my-3 h-[2px]"></div>
       </div>
+
+      {/* C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS */}
 
       <section className="flex flex-col items-center py-1">
         <h1 className="font-bold my-2">
@@ -95,23 +100,29 @@ function Home() {
           <span className="text-red-600">|</span> RESIDENTIAL
         </p>
       </section>
+      
       {/* footer section */}
-      <footer className="sm:bg-red-600 sm:h-[100px] sm:flex sm:flex-row sm:justify-around sm:items-center bg-red-600 h-[300px] flex-col justify-center items-center">
-        <div className="flex flex-col sm:flex-row ">
+      <footer className="bg-red-600 h-[80px] flex flex-row justify-around items-center ">
+        <div className="flex flex-row ">
           <LocalPhoneRoundedIcon />
-          <p className="">
+          <p className="sm:block hidden">
             Toll free <b>1800 200 1234</b>
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row ">
+        <div className="flex flex-row">
           <FacebookIcon />
-          <a href="https://www.facebook.com/cripumps">
+          <a
+            className="sm:block hidden"
+            href="https://www.facebook.com/cripumps"
+          >
             https://www.facebook.com/cripump
           </a>
         </div>
-        <div className="flex flex-col sm:flex-row ">
+        <div className="flex flex-row">
           <LanguageRoundedIcon />
-          <a href="https://www.crigroups.com">https://www.crigroups.com</a>
+          <a className="sm:block hidden" href="https://www.crigroups.com">
+            https://www.crigroups.com
+          </a>
         </div>
       </footer>
     </div>
